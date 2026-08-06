@@ -4,7 +4,9 @@ A single-page application for browsing Star Wars characters from the [SWAPI mirr
 
 ## Live demo
 
-**Deployment link:** _Coming soon_ — see [Deployment](#deployment).
+**Deployment link:** [tsx-mern-06-aug2026-pink.vercel.app](https://tsx-mern-06-aug2026-pink.vercel.app/)
+
+**Source:** [github.com/amitesh-183/tsx-mern-06Aug2026](https://github.com/amitesh-183/tsx-mern-06Aug2026)
 
 ## Features
 
@@ -123,7 +125,7 @@ vercel            # follow the prompts (framework preset: Vite)
 vercel --prod
 ```
 
-> Deploy link pending — insert the live URL above once deployed.
+> Deployed via Vercel at [tsx-mern-06-aug2026-pink.vercel.app](https://tsx-mern-06-aug2026-pink.vercel.app/).
 
 ## Assumptions & notes
 
