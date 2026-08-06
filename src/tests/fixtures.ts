@@ -1,0 +1,127 @@
+import type { Character, Film, Planet, Species } from '@/types'
+
+const SPECIES_URL = 'https://swapi.info/api/species/1/'
+const PLANET_URL = 'https://swapi.info/api/planets/1/'
+const FILMS_URLS = [
+  'https://swapi.info/api/films/1/',
+  'https://swapi.info/api/films/2/',
+  'https://swapi.info/api/films/3/',
+  'https://swapi.info/api/films/6/',
+]
+
+export const luke: Character = {
+  id: 1,
+  name: 'Luke Skywalker',
+  height: '172',
+  mass: '77',
+  hairColor: 'blond',
+  skinColor: 'fair',
+  eyeColor: 'blue',
+  birthYear: '19BBY',
+  gender: 'male',
+  homeworld: PLANET_URL,
+  films: FILMS_URLS,
+  species: [SPECIES_URL],
+  vehicles: [],
+  starships: [],
+  created: '2014-12-24T22:48:36.898000Z',
+  edited: '2014-12-24T22:48:36.898000Z',
+  url: 'https://swapi.info/api/people/1/',
+}
+
+export const leia: Character = {
+  id: 5,
+  name: 'Leia Organa',
+  height: '150',
+  mass: '49',
+  hairColor: 'brown',
+  skinColor: 'light',
+  eyeColor: 'brown',
+  birthYear: '19BBY',
+  gender: 'female',
+  homeworld: PLANET_URL,
+  films: FILMS_URLS,
+  species: [SPECIES_URL],
+  vehicles: [],
+  starships: [],
+  created: '2014-12-10T15:57:52.432000Z',
+  edited: '2014-12-20T21:17:50.309000Z',
+  url: 'https://swapi.info/api/people/5/',
+}
+
+export const humanSpecies: Species = {
+  id: 1,
+  name: 'Human',
+  classification: 'mammal',
+  designation: 'sentient',
+  averageHeight: '180',
+  skinColors: 'caucasian, black, hispanic, oriental',
+  hairColors: 'blonde, brown, black, red',
+  eyeColors: 'brown, blue, green, hazel, grey, amber',
+  averageLifespan: '120',
+  homeworld: 'https://swapi.info/api/planets/9/',
+  language: 'Galactic Basic',
+  people: ['https://swapi.info/api/people/1/'],
+  films: ['https://swapi.info/api/films/1/'],
+  created: '2014-12-10T13:52:11.567000Z',
+  edited: '2014-12-20T21:36:42.136000Z',
+  url: SPECIES_URL,
+}
+
+export const tatooine: Planet = {
+  id: 1,
+  name: 'Tatooine',
+  rotationPeriod: '23',
+  orbitalPeriod: '304',
+  diameter: '10465',
+  climate: 'arid',
+  gravity: '1 standard',
+  terrain: 'desert',
+  surfaceWater: '1',
+  population: '200000',
+  residents: Array.from(
+    { length: 11 },
+    (_, index) => `https://swapi.info/api/people/${index + 1}/`,
+  ),
+  films: ['https://swapi.info/api/films/1/'],
+  created: '2014-12-09T13:50:49.641000Z',
+  edited: '2014-12-21T20:48:04.175000Z',
+  url: PLANET_URL,
+}
+
+export const films: Film[] = [
+  {
+    id: 1,
+    title: 'A New Hope',
+    episodeId: 4,
+    openingCrawl: 'It is a period of civil war.',
+    director: 'George Lucas',
+    producer: 'Gary Kurtz, Rick McCallum',
+    releaseDate: '1977-05-25',
+    characters: ['https://swapi.info/api/people/1/'],
+    planets: [],
+    starships: [],
+    vehicles: [],
+    species: [],
+    created: '2014-12-10T14:23:31.880000Z',
+    edited: '2014-12-20T19:49:45.256000Z',
+    url: 'https://swapi.info/api/films/1/',
+  },
+  {
+    id: 2,
+    title: 'The Empire Strikes Back',
+    episodeId: 5,
+    openingCrawl: 'It is a dark time for the Rebellion.',
+    director: 'Irvin Kershner',
+    producer: 'Gary Kurtz, Rick McCallum',
+    releaseDate: '1980-05-17',
+    characters: ['https://swapi.info/api/people/1/'],
+    planets: [],
+    starships: [],
+    vehicles: [],
+    species: [],
+    created: '2014-12-12T11:26:24.656000Z',
+    edited: '2014-12-15T13:07:53.386000Z',
+    url: 'https://swapi.info/api/films/2/',
+  },
+]
