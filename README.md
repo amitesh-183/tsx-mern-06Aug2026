@@ -46,8 +46,8 @@ A single-page application for browsing Star Wars characters from the [SWAPI mirr
 | UI            | React 19, TypeScript, Vite                                       |
 | Styling       | Tailwind CSS v4 (`@tailwindcss/vite`), custom theme              |
 | State / data  | TanStack Query, Axios                                            |
-| Routing       | React Router (data router via `createBrowserRouter`)            |
-| Animation     | Motion (`motion/react`)                                         |
+| Routing       | React Router (data router via `createBrowserRouter`)             |
+| Animation     | Motion (`motion/react`)                                          |
 | Notifications | react-hot-toast                                                  |
 | Dates         | date-fns v4 + `@date-fns/tz`                                     |
 | Testing       | Vitest, React Testing Library, jsdom                             |
